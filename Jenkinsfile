@@ -2,7 +2,7 @@
 pipeline {
     agent any
     stages {
-        stage('calling sample') {
+        stage('calling displayname') {
             steps {
                 script{
                     displayname 'shreyas'
