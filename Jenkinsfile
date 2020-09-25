@@ -28,6 +28,6 @@ pipeline {
                 echo "Started stage stake"
             }
         }
-    }
+    
     }
 }
