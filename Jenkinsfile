@@ -1,13 +1,33 @@
-@Library('shared-library')_
+@Library('shared-library2')_
 pipeline {
     agent any
     stages {
-        stage('Shared1') {
+        stage('calling sample') {
             steps {
                 script{
                     sample 'shreyas'
                 }
             }
         }
+        
+       
+        stage("Dev") {
+            steps {
+                echo "Started stage Dev"
+            }
+        }
+            stage("QA") {
+            steps {
+                echo "Started stage QA"
+            }
+        }
+
+
+        stage("stake") {
+            steps {
+                echo "Started stage stake"
+            }
+        }
+    }
     }
 }
