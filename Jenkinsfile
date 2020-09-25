@@ -5,7 +5,7 @@ pipeline {
         stage('calling sample') {
             steps {
                 script{
-                    sample 'shreyas'
+                    displayname 'shreyas'
                 }
             }
         }
